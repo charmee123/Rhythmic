@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xylophone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+  <!-- Style sheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/xylophone.css">
+
+<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+
+<!-- Bootstrapo scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+
+      <a class="navbar-brand" href="/">
+        <img src="/favicon-32x32.png" alt="" width="35" height="40" class="d-inline-block ">
+        Rhythmic
+      </a>
+  
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+  
+        <ul class="navbar-nav ml-auto" style="color: #fff";>
+          <li>
+            <a class="nav-link" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/">Xylophone</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/piano.html">Piano</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/drum.html">Drum Kit</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact</a>
+          </li>
+        </ul>
+  
+      </div>
+    </nav>
+
+  </div>
+
+  <section class="select-none">
+    <div class="h-screen w-full p-10 flex text-gray-800">
+      <ul class="grid grid-cols-10 gap-2 md:gap-4 xl:gap-10 h-[70vh] my-auto w-full">
+        <li class="h-full flex items-center text-2xl lg:text-4xl font-bold">
+          <div class="h-[100%] w-full">
+            <a id="1" onclick="play(1)" onmouseenter="playOnEnter(1)" class="
+              cursor-pointer shadow-lg hover:shadow-2xl 
+              rounded-2xl bg-opacity-80 hover:bg-opacity-100 
+              flex items-center h-full justify-center bg-red-500">
+              C
+            </a>
+            <p class="mt-2 text-center">
+              1
+            </p>
+          </div>
+        </li>
+        <li class="h-full flex items-center text-2xl lg:text-4xl font-bold">
+          <div class="h-[92%] w-full">
+            <a id="2" onclick="play(2)" onmouseenter="playOnEnter(2)"class="
+              cursor-pointer shadow-lg hover:shadow-2xl 
+              rounded-2xl bg-opacity-80 hover:bg-opacity-100 
+              flex items-center h-full justify-center bg-amber-500">
+              D
+            </a>
+            <p class="mt-2 text-center">
+              2
+            </p>
+          </div>
+        </li>
+        <li class="h-full flex items-center text-2xl lg:text-4xl font-bold">
+          <div class="h-[86%] w-full">
+            <a id="3" onclick="play(3)" onmouseenter="playOnEnter(3)" class="
+              cursor-pointer shadow-lg hover:shadow-2xl 
+              rounded-2xl bg-opacity-80 hover:bg-opacity-100 
+              flex items-center h-full justify-center bg-yellow-400">
+              E
+            </a>
+            <p class="mt-2 text-center">
+              3
+            </p>
+          </div>
+        </li>
+        <li class="h-full flex items-center text-2xl lg:text-4xl font-bold">
+          <div class="h-[78%] w-full">
+            <a id="4" onclick="play(4)" onmouseenter="playOnEnter(4)" class="
+              cursor-pointer shadow-lg hover:shadow-2xl 
+              rounded-2xl bg-opacity-80 hover:bg-opacity-100 
+              flex items-center h-full justify-center bg-lime-500">
+              F
+            </a>
+            <p class="mt-2 text-center">
+              4
+            </p>
+          </div>
+        </li>
+        <li class="h-full flex items-center text-2xl lg:text-4xl font-bold">
+          <div class="h-[70%] w-full">
+            <a id="5" onclick="play(5)" onmouseenter="playOnEnter(5)" class="
+              cursor-pointer shadow-lg hover:shadow-2xl 
+              rounded-2xl bg-opacity-80 hover:bg-opacity-100 
+              flex items-center h-full justify-center bg-teal-500">
+              G
+            </a>
+            <p class="mt-2 text-center">
+              5
+            </p>
+          </div>
+        </li>
+        <li class="h-full flex items-center text-2xl lg:text-4xl font-bold">
+          <div class="h-[62%] w-full">
+            <a id="6" onclick="play(6)" onmouseenter="playOnEnter(6)" class="
+              cursor-pointer shadow-lg hover:shadow-2xl 
+              rounded-2xl bg-opacity-80 hover:bg-opacity-100 
+              flex items-center h-full justify-center bg-sky-500">
+              H
+            </a>
+            <p class="mt-2 text-center">
+              6
+            </p>
+          </div>
+        </li>
+        <li class="h-full flex items-center text-2xl lg:text-4xl font-bold">
+          <div class="h-[54%] w-full">
+            <a id="7" onclick="play(7)" onmouseenter="playOnEnter(7)" class="
+              cursor-pointer shadow-lg hover:shadow-2xl 
+              rounded-2xl bg-opacity-80 hover:bg-opacity-100 
+              flex items-center h-full justify-center bg-purple-500">
+              I
+            </a>
+            <p class="mt-2 text-center">
+              7
+            </p>
+          </div>
+        </li>
+        <li class="h-full flex items-center text-2xl lg:text-4xl font-bold">
+          <div class="h-[44%] w-full">
+            <a id="8" onclick="play(8)" onmouseenter="playOnEnter(8)" class="
+              cursor-pointer shadow-lg hover:shadow-2xl 
+              rounded-2xl bg-opacity-80 hover:bg-opacity-100 
+              flex items-center h-full justify-center bg-red-500">
+              C
+            </a>
+            <p class="mt-2 text-center">
+              8
+            </p>
+          </div>
+        </li>
+        <li class="h-full flex items-center text-2xl lg:text-4xl font-bold">
+          <div class="h-[36%] w-full">
+            <a id="9" onclick="play(9)" onmouseenter="playOnEnter(9)" class="
+              cursor-pointer shadow-lg hover:shadow-2xl 
+              rounded-2xl bg-opacity-80 hover:bg-opacity-100 
+              flex items-center h-full justify-center bg-orange-500">
+              D
+            </a>
+            <p class="mt-2 text-center">
+              9
+            </p>
+          </div>
+        </li>
+        <li class="h-full flex items-center text-2xl lg:text-4xl font-bold">
+          <div class="h-[28%] w-full">
+            <a id="0" onclick="play(0)" onmouseenter="playOnEnter(0)" class="
+              cursor-pointer shadow-lg hover:shadow-2xl 
+              rounded-2xl bg-opacity-80 hover:bg-opacity-100 
+              flex items-center h-full justify-center bg-yellow-400">
+              E
+            </a>
+            <p class="mt-2 text-center">
+              0
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="white-section" id="footer" style="padding-top: 30px;">
+    <div class="container-fluid-footer">
+      <i class="social-icon fab fa-facebook-f"></i>
+      <i class="social-icon fab fa-twitter"></i>
+      <i class="social-icon fab fa-instagram"></i>
+      <i class="social-icon fas fa-envelope"></i>
+      <p>© Copyright 2023 Rhythmic</p>
+      <p>Made with ❤️ by Charmee & Ritiika</p>
+    </div>
+  </footer>
+
+  <script src="/scripts/xylophone.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+
+body {
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.container-fluid{
+    padding-top: 3%;
+}
+
+.colored-section {
+    background-color: #f9697e;
+    color: #fff;
+}
+
+.navbar {
+    padding: 0 0 3rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+  
+.nav-link {
+    font-size: 1.5rem;
+    font-family: "Montserrat-Light";
+    color: #fff;
+    font-weight: 500;
+}
+
+#title {
+    background-color: #ff4c68;
+    color: #fff;
+    text-align: left;
+}
+  
+#title .container-fluid {
+    padding: 3% 15% 7%;
+}
+
+h2{
+    
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "Montserrat-Bold";
+    font-style: normal;
+    font-weight: 400;
+    color:#fff;
+}
+
+/* Image */
+.title-image {
+    width: 65%;
+    mix-blend-mode: darken;
+    position: relative;
+    float: right;
+    right: 10%;
+    margin: 5px;
+}
+.content{
+    font-size: 1.2em;
+    text-align: justify;
+    padding-top: 20px;
+}
+/* feature section */
+#features {
+    position: relative;
+}
+  
+.feature-title {
+    font-size: 1.5rem;
+}
+  
+.feature-box {
+    padding: 4.5%;
+}
+  
+.icon {
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+  
+.icon:hover {
+    color: #ff4c68;
+}
+
+
+/* for container */
+
+.image{
+    margin-top: 50px;
+    mix-blend-mode: darken;
+    display: block;
+    width: 320px;
+    height: 400px;
+}
+
+.lead{
+    font-size: 1.2em;
+    font-family: 'Montserrat';
+    text-align: left;
+}
+
+.featurette-heading{
+    font-size: 2.5em;
+    font-family: "Ubuntu";
+    color: #290d11;
+}
+
+
+/* Footer Section */
+
+.social-icon {
+    margin: 20px 10px;
+}
+
+.container-fluid-footer{
+    padding: 20px;
+}
+
+
+@media (max-width: 1028px) {
+  
+    #title {
+      text-align: center;
+    }
+  
+    .title-image {
+      position: static;
+      transform: rotate(0);
+    }
+}
+
+
+
+
+
+
